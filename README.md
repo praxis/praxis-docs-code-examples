@@ -1,6 +1,20 @@
 # Praxis Docs Code Examples
 
+This is a Praxis Plugin that adds code examples to the Praxis Docs Browser. Why
+should you use it? Let's talk about a few reasons you probably shouldn't use it:
 
+- Praxis currently doesn't have a way to describe an authentication mechanism for
+  the supported APIs. So if your API is authenticated, the examples won't actually work.
+- The code generators don't necessarily (yet!) take into consideration everything
+  that can be expressed with the the Praxis design language and may fall
+  over. I recommend reviewing each example before publishing the generated code
+  examples to clients.
+- The examples are fairly uninteresting uses of the API. A handwritten example of
+  doing something actually interesting with your API might be more interesting for
+  the reader.
+
+That being said, this repo can serve as a good starting point for writing your own
+code generators for the Praxis doc browser.
 
 ## Installation
 
@@ -20,7 +34,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add `application.bootloader.use Praxis::DocsCodeExamples` to your Praxis bootloader.
 
 ## Development
 
